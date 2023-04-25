@@ -1,4 +1,9 @@
 <?php 
+
+header("Location: {$_GET['url']}");
+ echo 'You are redirecting to... CheckPHP';
+ sleep(5);
+
     if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {echo('\nMSIE');}
  elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE){echo('\nTrident');}
  elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Firefox') !== FALSE){echo('\nFirefox');}
